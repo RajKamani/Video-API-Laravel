@@ -25,11 +25,7 @@ class VideoFactory extends Factory
                  'title' => $this->faker->text($maxNbChars = 15),
                  'description'=> $this->faker->text($maxNbChars = 30),
                  'likes' => $this->faker->randomDigit,
-                 'comments'=> function()
-                 {
-
-                     return Video::class->Comments()->count();
-                 }
+                 'comments'=> $this->faker->randomDigit
 
 
              ];
