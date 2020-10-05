@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\api\v1\VideoController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,7 +25,7 @@ Route::prefix("v1")->group(function ()
 });
 Route::prefix("v1/video")->group(function ()
 {
-    Route::apiResource("{video}/comment",VideoController::class);
+    Route::apiResource("{video}/comment", CommentController::class);
 });
 
 

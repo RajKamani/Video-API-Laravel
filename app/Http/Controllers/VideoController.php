@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\Video as VideoResource;
+use App\Http\Resources\VideoCollection;
 use App\Models\Video;
 use Illuminate\Http\Request;
 
@@ -10,11 +12,12 @@ class VideoController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return VideoCollection
      */
     public function index()
     {
-        //
+        return new VideoCollection(Video::all());
+
     }
 
     /**
@@ -42,11 +45,11 @@ class VideoController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Video  $video
-     * @return \Illuminate\Http\Response
+     * @return \App\Http\Resources\Video
      */
     public function show(Video $video)
     {
-        //
+        return new VideoResource($video);
     }
 
     /**
