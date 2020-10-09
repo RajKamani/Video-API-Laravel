@@ -24,7 +24,7 @@ class CommentFactory extends Factory
     {
 
         return [
-            'videos_id' => function()
+            'video_id' => function()
             {
                 return Video::all()->random();
             },

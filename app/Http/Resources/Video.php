@@ -20,12 +20,7 @@ class Video extends JsonResource
             'Title' => $this->title,
             'Description' => $this->description,
             'Likes' => $this->likes,
-            'Comments' => function()
-            {
-
-                $data = new VideoM();
-                return $data->Comments()->count();
-            }
+            'Comments' => Comment::collection($this->Comments)->count()
 
 
         ];

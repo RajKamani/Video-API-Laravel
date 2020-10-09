@@ -12,8 +12,6 @@ class Video extends Model
 
         'title','description','likes','comments'
     ];
-
-
     public function Comments(){
 
         return $this->hasMany(Comment::class);

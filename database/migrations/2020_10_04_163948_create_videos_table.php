@@ -18,7 +18,6 @@ class CreateVideosTable extends Migration
             $table->string('title',100);
             $table->text('description');
             $table->integer('likes');
-            $table->integer('comments');
             $table->timestamps();
         });
     }

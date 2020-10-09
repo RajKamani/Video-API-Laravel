@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Http\Resources\Comment;
 use App\Models\Video;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -25,8 +26,6 @@ class VideoFactory extends Factory
                  'title' => $this->faker->text($maxNbChars = 15),
                  'description'=> $this->faker->text($maxNbChars = 30),
                  'likes' => $this->faker->randomDigit,
-                 'comments'=> $this->faker->randomDigit
-
 
              ];
     }
