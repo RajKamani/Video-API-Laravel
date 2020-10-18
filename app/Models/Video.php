@@ -10,7 +10,7 @@ class Video extends Model
     use HasFactory;
     protected $fillable = [
 
-        'title','description','likes','comments'
+        'title','description','likes'
     ];
     public function Comments(){
 

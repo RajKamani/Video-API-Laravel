@@ -28,15 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5b0b2519-b06f-4897-a6fe-0e2321e7060a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VideoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VideoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Resources/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Video.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/VideoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/VideoFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_163948_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_163948_create_videos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_164121_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_164121_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CommentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CommentSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +198,8 @@
       <updated>1601807830487</updated>
       <workItem from="1601807835424" duration="16615000" />
       <workItem from="1601878994787" duration="9740000" />
-      <workItem from="1602244867447" duration="9059000" />
+      <workItem from="1602244867447" duration="9973000" />
+      <workItem from="1603009664404" duration="3617000" />
     </task>
     <servers />
   </component>
@@ -252,9 +247,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1602248593509" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602247203015">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603012549411">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1602247203015" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1603012549411" />
   </component>
 </project>

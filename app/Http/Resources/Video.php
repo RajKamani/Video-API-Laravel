@@ -20,8 +20,8 @@ class Video extends JsonResource
             'Title' => $this->title,
             'Description' => $this->description,
             'Likes' => $this->likes,
-            'Comments' => Comment::collection($this->Comments)->count()
-
+            'Comments_count' => Comment::collection($this->Comments)->count(),
+            'all_comments' => route('comment.index',$this->id)
 
         ];
     }
