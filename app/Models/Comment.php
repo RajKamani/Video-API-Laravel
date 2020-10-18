@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     use HasFactory;
+    protected $fillable =[
+
+        'user','comment_text'
+    ];
     public function Video()
     {
         return $this->belongsTo(Video::class);
