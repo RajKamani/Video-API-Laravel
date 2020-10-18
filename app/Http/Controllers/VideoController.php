@@ -23,7 +23,7 @@ class VideoController extends Controller
         $video = new Video();
         $video->title=$request->title;
         $video->description=$request->description;
-        $video->likes=$request->likes;
+        $video->likes=0;
         $video->save();
 
         return response(
@@ -38,12 +38,19 @@ class VideoController extends Controller
 
     public function update(Request $request, Video $video)
     {
-        //
+        $video->update($request->all());
+        return response(
+            ['data'=> new VideoResource($video)]
+            ,Response::HTTP_CREATED);
     }
 
 
     public function destroy(Video $video)
     {
-        //
+        try {
+            $video->delete();
+        } catch (\Exception $e) {
+        }
+        return response(null,Response::HTTP_NO_CONTENT);
     }
 }
