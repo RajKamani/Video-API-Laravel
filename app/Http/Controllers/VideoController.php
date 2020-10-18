@@ -8,6 +8,7 @@ use App\Http\Resources\VideoCollection;
 use App\Models\Video;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class VideoController extends Controller
 {
@@ -33,7 +34,16 @@ class VideoController extends Controller
 
     public function show(Video $video)
     {
-        return new VideoResource($video);
+        try {
+
+                 return new VideoResource($video);
+        }catch(NotFoundHttpException $e)
+        {
+            return response(
+                ['error'=> "Video Not Found"]
+                ,Response::HTTP_NOT_FOUND);
+        }
+
     }
 
     public function update(Request $request, Video $video)

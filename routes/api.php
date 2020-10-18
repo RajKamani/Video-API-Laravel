@@ -27,6 +27,9 @@ Route::prefix("v1/video")->group(function ()
 {
     Route::apiResource("{video}/comment", CommentController::class);
 });
-
+Route::fallback(function(){
+    return response()->json([
+        'message' => 'Page Not Found'], 404);
+}); // For Incorrect route
 
 
